@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GE-101 Lab 5 - Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.8;
+        }
+        .nav-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 12px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            vertical-align: top;
+        }
+        textarea {
+            width: 300px;
+        }
+        .buttons-container {
+            margin-top: 15px;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Home link at the top -->
+    <a href="index.html" class="nav-link">Home</a>
+
+    <h2>Registration Form</h2>
+
+    <!-- Form configured with method="get" to pass data into the address bar -->
+    <form action="thanks.html" method="get">
+        
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="regNo">Registration No:</label>
+            <input type="text" id="regNo" name="regNo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="03XXXXXXXXX">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="16" max="40">
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-group">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male" style="width: auto;">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female" style="width: auto;">Female</label>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="AI">AI</option>
+                <option value="CS">CS</option>
+                <option value="SE">SE</option>
+                <option value="EE">EE</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Interests:</label>
+            <input type="checkbox" id="web" name="interests" value="Web">
+            <label for="web" style="width: auto;">Web</label>
+            
+            <input type="checkbox" id="ai" name="interests" value="AI">
+            <label for="ai" style="width: auto;">AI</label>
+            
+            <input type="checkbox" id="games" name="interests" value="Games">
+            <label for="games" style="width: auto;">Games</label>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4"></textarea>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="buttons-container">
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </div>
+
+    </form>
+
+</body>
+</html>
