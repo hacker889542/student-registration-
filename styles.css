@@ -1,0 +1,39 @@
+#title {
+    color: #2c3e50; /* Replace with your choice of color */
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+/* Style the profile card using its class selector */
+.card {
+    border: 2px solid #34495e;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px; /* Optional: gives a clean look */
+    margin-bottom: 20px;
+    .hero {
+    background-image: url('banner.jpg');
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image perfectly round */
+    object-fit: cover;   /* Ensures the image doesn't stretch */
+    margin: 20px auto;
+}
+
+/* Set the paragraph font properties globally or locally */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333333;
+}
